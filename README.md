@@ -23,7 +23,7 @@ Basic usage:
 ```javascript
 var _ = require('under-promise');
 
-var array_of_promises = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
+var array_of_promises = [Promise.resolve(1), Promise.resolve(2), 3, 4];
 
 function addOne = function(num) {
   return num + 1;
@@ -31,13 +31,39 @@ function addOne = function(num) {
 
 var new_array_of_promises = _.thenMap(array_of_promises, addOne);
 
-// prints [2, 3, 4]
+// prints [2, 3, 4, 5]
 _.thenAll(new_array_of_promises, console.log);
 ```
 
-Or, to mixin the functionality to your own version of lo-dash:
+Equally supports promises of arrays:
 
 ```javascript
+var array_of_promises = Promise.resolve([Promise.resolve(1), Promise.resolve(2), 3, 4]);
+
+function addOne = function(num) {
+  return num + 1;
+}
+
+_.thenMap(array_of_promises, addOne);
+```
+
+Error handling:
+
+```javascript
+
+_.thenMap(array_of_promises, addOne)
+ .catch(function(e){})
+ .finally(function(valueOrError){});
+```
+
+
+
+Or, to mixin the functionality to your own version of lo-dash and promise library:
+
+```javascript
+var _ = require('lodash');
+var all = require('rsvp').all;
+
 require('under-promise/lib/mixin')(_, all);
 ```
 
