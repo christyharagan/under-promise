@@ -14,7 +14,7 @@
  
 <a name="then"></a>
 #then(promise, then)
-Register a callback if the promise is fulfilled. See [https://promisesaplus.com/#point-26](https://promisesaplus.com/#point-26)
+Register a callback if the promise is fulfilled. See [https://promisesaplus.com/#point-26](https://promisesaplus.com/#point-26).
 
 **Params**
 
@@ -24,7 +24,7 @@ Register a callback if the promise is fulfilled. See [https://promisesaplus.com/
 **Returns**: `Promise`  
 <a name="catch"></a>
 #catch(promise, handleError)
-Register a callback if the promise is rejected. See [https://promisesaplus.com/#point-27](https://promisesaplus.com/#point-27)
+Register a callback if the promise is rejected. See [https://promisesaplus.com/#point-27](https://promisesaplus.com/#point-27).
 
 **Params**
 
@@ -55,7 +55,7 @@ Create a new promise that is fulfilled if all promises in the array are fulfille
 **Returns**: `Promise`  
 <a name="thenForEach"></a>
 #thenForEach(callback, thisArg, collection)
-"Promisified" version of lo-dash's forEach (see [https://lodash.com/docs#forEach](https://lodash.com/docs#forEach).
+"Promisified" version of lo-dash's forEach (see [https://lodash.com/docs#forEach](https://lodash.com/docs#forEach)).
 
 **Params**
 
@@ -66,7 +66,7 @@ Create a new promise that is fulfilled if all promises in the array are fulfille
 **Returns**: `Promise`  
 <a name="thenMap"></a>
 #thenMap(callback, thisArg, collection)
-"Promisified" version of lo-dash's map (see [https://lodash.com/docs#map](https://lodash.com/docs#map).
+"Promisified" version of lo-dash's map (see [https://lodash.com/docs#map](https://lodash.com/docs#map)).
 
 **Params**
 
@@ -77,7 +77,7 @@ Create a new promise that is fulfilled if all promises in the array are fulfille
 **Returns**: `Promise`  
 <a name="thenFilter"></a>
 #thenFilter(callback, thisArg, collection)
-"Promisified" version of lo-dash's filter (see [https://lodash.com/docs#filter](https://lodash.com/docs#filter).
+"Promisified" version of lo-dash's filter (see [https://lodash.com/docs#filter](https://lodash.com/docs#filter)).
 
 **Params**
 
@@ -88,7 +88,7 @@ Create a new promise that is fulfilled if all promises in the array are fulfille
 **Returns**: `Promise`  
 <a name="thenZipObject"></a>
 #thenZipObject(props, vals)
-"Promisified" version of lo-dash's zipObject (see [https://lodash.com/docs#zipObject](https://lodash.com/docs#zipObject).
+"Promisified" version of lo-dash's zipObject (see [https://lodash.com/docs#zipObject](https://lodash.com/docs#zipObject)).
 
 **Params**
 
@@ -98,7 +98,7 @@ Create a new promise that is fulfilled if all promises in the array are fulfille
 **Returns**: `Promise`  
 <a name="thenFlatten"></a>
 #thenFlatten(array, isShallow, callback, thisArg)
-"Promisified" version of lo-dash's flatten (see [https://lodash.com/docs#flatten](https://lodash.com/docs#flatten).
+"Promisified" version of lo-dash's flatten (see [https://lodash.com/docs#flatten](https://lodash.com/docs#flatten)).
 
 **Params**
 
