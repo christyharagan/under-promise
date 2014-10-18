@@ -64,8 +64,11 @@ Or, to mixin the functionality to your own version of lo-dash and promise librar
 var _ = require('lodash');
 var all = require('rsvp').all;
 
-require('under-promise/lib/mixin')(_, all);
+require('under-promise/lib/mixin')(_, all, true);
 ```
+
+The last parameter specifies whether a new instance of lo-dash is created to prevent clashes with other packages. Passing
+```true``` creates a new instance and mixes the functions into that; passing ```false``` just mixes the functions in the provided instance.
 
 API
 ------

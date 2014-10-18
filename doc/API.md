@@ -2,6 +2,7 @@
 
 **Functions**
 
+* [mixin(_, all, newInstance)](#mixin)
 * [then(promise, then)](#then)
 * [catch(promise, handleError)](#catch)
 * [finally(promise, handleFinal)](#finally)
@@ -12,6 +13,17 @@
 * [thenZipObject(props, vals)](#thenZipObject)
 * [thenFlatten(array, isShallow, callback, thisArg)](#thenFlatten)
  
+<a name="mixin"></a>
+#mixin(_, all, newInstance)
+Mixin functionality to a lo-dash instance. All functions referenced below are the functions that are added to the lo-dash instance.
+
+**Params**
+
+- _  - the instance of lo-dash to extend  
+- all  - a function that takes an array of promises and returns a new promise that resolves if all promises in the array resolve, and fails if any of them fail.  
+- newInstance `boolean`  
+
+**Returns**: `*`  
 <a name="then"></a>
 #then(promise, then)
 Register a callback if the promise is fulfilled. See [https://promisesaplus.com/#point-26](https://promisesaplus.com/#point-26).
